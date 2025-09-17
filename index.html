@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Cadastro</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Cadastro de Usuário</h1>
+
+  <form id="formCadastro">
+    <label>Nome:
+      <input type="text" id="nome">
+      <span class="erro" id="erroNome"></span>
+    </label>
+
+    <label>Usuário:
+      <input type="text" id="usuario">
+      <span class="erro" id="erroUsuario"></span>
+    </label>
+
+    <label>Senha:
+      <input type="password" id="senha">
+      <span class="erro" id="erroSenha"></span>
+    </label>
+
+    <label>Email:
+      <input type="email" id="email">
+      <span class="erro" id="erroEmail"></span>
+    </label>
+
+    <label>Data de Nascimento:
+      <input type="date" id="nascimento">
+      <span class="erro" id="erroNascimento"></span>
+    </label>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <div id="mensagem" class="sucesso"></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
